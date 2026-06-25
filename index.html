@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="theme-toggle">🌙</button>
+<div id="feedback"></div>
+<div class="container">
+
+    <div id="start-screen">
+        <img src="https://imgs.search.brave.com/sHHQpkGzSdr2_QRySzwKXUq3QwGY8f6k_g0kGc1A_5Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L3Bv/a2Vtb24vaW1hZ2Vz/LzUvNWIvUGlrYWNo/dV9hbmRfQXNoLnBu/Zy9yZXZpc2lvbi9s/YXRlc3Qvc2NhbGUt/dG8td2lkdGgtZG93/bi8yMTU_Y2I9MjAy/MDA3MjExODEzMDQ" alt="Pokemon" width="300">
+        <h1>Pokémon Quiz</h1>
+        <p>Test your Pokémon knowledge!</p>
+
+        <button onclick="startQuiz()">Start Quiz</button>
+
+        <select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+</select>
+
+    </div>
+
+
+<div class="quiz-wrapper">
+
+   
+    <div class="container">
+        <div id="quiz-screen" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <p id="progress"></p>
+        </div>
+    </div>
+
+</div>
+
+<div id="feedback"></div>
+
+
+    <div id="result-screen" class="hidden">
+        <h1>Quiz Completed!</h1>
+        <h2 id="score"></h2>
+        <button onclick="location.reload()">Play Again</button>
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

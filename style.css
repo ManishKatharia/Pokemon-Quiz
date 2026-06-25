@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+    background-image:url("https://imgs.search.brave.com/gJ-EQxjAAooX9-_zPWu7SbgQfLRFyhe4khb7R-cPkiA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDE4MTU1/ODgucG5n");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+
+/* Dark mode */
+.dark-mode{
+    background:
+    
+    url("https://imgs.search.brave.com/69BH5F3T3F8gcpY3z4sOg97twmNk_wA82CNt4mEER_s/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci8yNTYv/MjQ0L0hELXdhbGxw/YXBlci1kYXJrcmFp/LXBva2Vtb24tZGFy/ay10aHVtYm5haWwu/anBn");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* Main wrapper */
+.quiz-wrapper{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Quiz box */
+.container{
+    background: whitesmoke;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    width:500px;
+    box-shadow: none;
+}
+
+/* Images */
+img{
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Headings */
+h1,h2{
+    margin-bottom:15px;
+}
+
+/* Buttons */
+button{
+    background:#ff0000;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* Options */
+.option-btn{
+    display:block;
+    width:100%;
+    margin:10px 0;
+}
+
+/* Hidden class */
+.hidden{
+    display:none;
+}
+
+/* Side decorative images */
+.side-img{
+    position:absolute;
+    width:180px;
+    height:auto;
+}
+
+.left{
+    left:-220px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.right{
+    right:-220px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* Theme button */
+#theme-toggle{
+    position:absolute;
+    top:20px;
+    right:20px;
+    padding:10px 15px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* Feedback */
+#feedback{
+    position: fixed;
+    top: calc(50% + 230px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Dark mode container */
+.dark-mode .container{
+    background:palegoldenrod;
+    color:black;
+}
+
+/* Dark mode buttons */
+.dark-mode button{
+    background:#333;
+    color:white;
+}
+
+.dark-mode .option-btn{
+    background:navy;
+}
+select{
+    padding:10px;
+    margin:15px;
+    border-radius:8px;
+    border:none;
+    font-size:16px;
+    color: black;
+    background: paleturquoise;
+}
