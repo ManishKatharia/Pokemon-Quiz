@@ -161,14 +161,13 @@ function startQuiz(){
 const selectedDifficulty =
 document.getElementById("difficulty").value;
 
-if(selectedDifficulty === "easy"){
+if (selectedDifficulty === "easy") {
     quizData = easyQuestions;
-}
-elif
-    if(selectedDifficulty === "medium"){
-        quizData=medQuestions;
-    
-    else{
+} 
+else if (selectedDifficulty === "medium") {
+    quizData = medQuestions;
+} 
+else {
     quizData = hardQuestions;
 }
 
